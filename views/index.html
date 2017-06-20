@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.0/dropzone.css">
+    <style>
+        /*
+            Please don't use css like this,
+            you should use it in an external css stylesheet instead ;).
+        */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh
+        }
+
+        .dropzone {
+            text-align: center;
+        }
+    </style>
+    <title>Dropzone and Golang</title>
+</head>
+
+<body>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Dropzone and Golang
+                </h1>
+                <h2 class="subtitle">
+                    Easy file upload with dropzone and golang in the backend :)
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div id="filesBox" class="dropzone">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>
+                    <strong>Example</strong> by <a href="https://twitter.com/Gucady" target="_blank">Gustavo Castillo</a>.
+                </p>
+                <p>
+                    <a class="icon" href="https://github.com/gustavocd" target="_blank">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.0/dropzone.js"></script>
+    <script src="/public/app.js"></script>
+</html>
