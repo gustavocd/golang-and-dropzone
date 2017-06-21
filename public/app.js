@@ -15,10 +15,10 @@
     });
 
     drop.on('success', function(file, response) {
-        console.log(file);
-    })
+        file.id = response.id
+    });
 
-    drop.on('addedfile', function(file) {
+    drop.on('removedfile', function(file) {
         console.log(file);
-    })
+    });
 })(Dropzone);

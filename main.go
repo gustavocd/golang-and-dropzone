@@ -31,5 +31,5 @@ func main() {
 	r.GET("/public/*filepath", staticFileServer)
 
 	logrus.Println("Server running")
-	logrus.Fatal(http.ListenAndServe(":8081", r))
+	logrus.Fatal(http.ListenAndServe(":8080", r))
 }
