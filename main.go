@@ -30,6 +30,6 @@ func main() {
 	r.POST("/upload", middlewares.IsMethodPost(handlers.Store))
 	r.GET("/public/*filepath", staticFileServer)
 
-	logrus.Println("Server running")
+	logrus.Println("Server running at localhost:8080")
 	logrus.Fatal(http.ListenAndServe(":8080", r))
 }

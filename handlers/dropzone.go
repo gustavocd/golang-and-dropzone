@@ -40,8 +40,9 @@ func Store(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 	case "image/png":
 		saveFile(w, file, header)
 	default:
-		jsonResponse(w, http.StatusBadRequest, map[string]string{"message": "Por favor envie un archivo válido"})
+		jsonResponse(w, http.StatusBadRequest, map[string]string{"message": "Por favor envíe un archivo válido"})
 	}
+	jsonResponse(w, http.StatusCreated, map[string]string{"message": "Archivo guardado con éxito"})
 }
 
 func saveFile(w http.ResponseWriter, file multipart.File, handle *multipart.FileHeader) {
